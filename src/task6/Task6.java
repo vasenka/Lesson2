@@ -28,30 +28,3 @@ public class Task6 {
         submarine.go();
     }
 }
-class NuclearSubmarine {
-    String name;
-    String color;
-    NuclearSubmarineEngine engine;
-    NuclearSubmarine(String name, String color, NuclearSubmarineEngine engine){
-          this.name = name;
-          this.color = color;
-          this.engine = engine;
-    }
-    NuclearSubmarine(){}
-    void go(){
-        System.out.println("Атомная лодка "+name+" цвета "+color+" с двигателем "+engine+" пущена в плавание");
-    }
-    class NuclearSubmarineEngine {
-        String engineName;
-        int powerOfEngine;
-        NuclearSubmarineEngine(String engineName, int powerOfEngine){
-            this.engineName = engineName;
-            this.powerOfEngine = powerOfEngine;
-        }
-
-        @Override
-        public String toString() {
-            return "фирмы "+engineName+" мощностью "+powerOfEngine+" л.с.";
-        }
-    }
-}
